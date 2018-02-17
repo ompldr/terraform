@@ -115,6 +115,8 @@ resource "google_dns_record_set" "ompldr-io-AAAA" {
   rrdatas = ["2600:1901:0:9ef2::"]
 }
 
+# Other domains (ompldr.org, omploader.org)
+
 resource "google_dns_record_set" "www-omploader-org-A" {
   project = "${var.project}"
   name    = "www.${google_dns_managed_zone.omploader-org.dns_name}"
