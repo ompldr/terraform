@@ -20,7 +20,6 @@ resource "google_container_cluster" "us-west1" {
 
   node_pool = [{
     name       = "node-pool-small"
-    node_count = 0
 
     management {
       auto_repair  = true
@@ -48,7 +47,6 @@ resource "google_container_cluster" "us-west1" {
   },
     {
       name       = "node-pool-large"
-      node_count = 0
 
       management {
         auto_repair  = true
