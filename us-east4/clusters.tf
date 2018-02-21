@@ -82,7 +82,7 @@ resource "google_compute_disk" "bitcoind-1" {
   name    = "bitcoind-1"
   type    = "pd-ssd"
   zone    = "${var.default_zone}"
-  size    = 200
+  size    = 250
 }
 
 resource "google_compute_disk" "lnd-1" {
